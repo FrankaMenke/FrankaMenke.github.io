@@ -1,17 +1,26 @@
 
 ---
-title: "R Notebook"
-author: John Jacob Jingleheimer Schmidt
-date: "2021-06-16"
-output: html_notebook
+title: "Fake Analysis Report"
+author: Ali Ben Gator
+date: "2021-06-17"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+  html_document: default
+  pdf_document: default
 ---
+
+```{r}
+knitr::opts_chunk$set(eval = TRUE, 
+  include = FALSE, 
+  echo = FALSE, 
+  message = FALSE, 
+  warning = FALSE)
+```
 
 ```{r}
 library(tidyverse)
 ```
 
-```{r}
-x <- 3
-x
-```
+## Creating Dummy Text
 
