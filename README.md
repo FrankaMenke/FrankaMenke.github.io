@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Creating Dummy Text
 
 You can use the [editor on GitHub](https://github.com/FrankaMenke/FrankaMenke.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
