@@ -66,21 +66,34 @@ Also, one can transform the text into lists sentence by sentence
 
 # Tables
 
-The first 10 rows and first 5 columns of `ggplot2::mpg' are displayed in this fancy table:
+The first 10 rows and first 5 columns of `ggplot2::mpg` are displayed in this fancy table:
 
 ```{r}
 data <- ggplot2::mpg
-
+data <- data[1:10, 1:5]
+data
 ```
 
 # Plots
 
 Finally, I created this helpful plot.
+```{r}
+plt <- nycflights13::flights %>% 
+  na.omit() %>% 
+  filter(dep_delay > 0) %>% 
+  ggplot(aes(x = dep_delay)) +
+  geom_histogram() + 
+  scale_x_log10()
+```
+```{r include = TRUE}
+plt
+```
+
 
 
 Also, I did this using the following code:
 
-```{r, include = TRUE, echo = TRUE}
+```{r eval = FALSE, include = TRUE, echo = TRUE}
 
 nycflights13::flights %>% 
   na.omit() %>% 
