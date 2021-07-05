@@ -1,9 +1,17 @@
 
 ---
 title: "R Notebook"
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-  html_document: default
-  pdf_document: default
+author: John Jacob Jingleheimer Schmidt
+date: "2021-06-16"
+output: html_notebook
 ---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+x <- 3
+x
+```
+
