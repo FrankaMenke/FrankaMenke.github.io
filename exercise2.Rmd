@@ -1,0 +1,19 @@
+---
+title: "Cool Topic"
+subtitle: "With a super amazing subtitle"
+output:
+ xaringan::moon_reader:
+   lib_dir: libs
+   nature:
+     highlightStyle: github
+     highlightLines: true
+     countIncrementalSlides: false
+---
+
+#Test
+
+```{r}
+x <- 4
+x
+```
+

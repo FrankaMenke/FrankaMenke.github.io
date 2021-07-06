@@ -24,6 +24,8 @@ knitr::opts_chunk$set(eval = TRUE,
 library(tidyverse)
 library(kableExtra)
 library(nycflights13)
+library(xaringan)
+#library(kable)
 ```
 
 ## Creating Dummy Text
@@ -73,6 +75,11 @@ data <- ggplot2::mpg
 data <- data[1:10, 1:5]
 data
 ```
+
+```{r}
+data %>% knitr::kable()
+```
+
 
 # Plots
 
