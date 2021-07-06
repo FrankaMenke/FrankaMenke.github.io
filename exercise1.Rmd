@@ -82,8 +82,7 @@ data %>%
     kable_classic(full_width = F) %>%
     kable_styling("striped") %>%
     row_spec(5, color = "white", background = "black") %>%
-    column_spec(3, background = "blue")
-
+column_spec(3, bold = T, background = factor(ggplot2::mpg$displ, c(1.8, 2.0, 2.8, 3.1),   spec_color(c(1.8, 2.0, 2.8, 3.1), alpha = 0.5))) 
 ```
 
 
