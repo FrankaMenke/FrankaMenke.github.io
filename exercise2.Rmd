@@ -1,6 +1,6 @@
 ---
-title: "Cool Topic"
-subtitle: "With a super amazing subtitle"
+title: "Flowers"
+subtitle: "are sooo amazing"
 output:
  xaringan::moon_reader:
    lib_dir: libs
@@ -10,10 +10,56 @@ output:
      countIncrementalSlides: false
 ---
 
-#Test
-
-```{r}
-x <- 4
-x
+```{r, echo = F, message = F, warning = F, fig.align='center'}
+library(tidyverse)
+library(kableExtra)
+library(xaringan)
+knitr::opts_chunk$set(fig.width = 10, fig.height = 5, fig.align = 'center')
 ```
+
+# Flowerplot
+
+Look at this plot
+```{r, include = TRUE, echo = FALSE}
+iris %>% 
+   ggplot(aes(Sepal.Length, Sepal.Width, col = Species)) +
+   geom_point()
+```
+---
+
+# Flowernotes
+
+We want flowernotes accessible only in presentation mode
+
+???
+
+* You get a pointless note
+* and you get a pointless note
+* Everyone gets a pointless note
+
+---
+# Boring page without any content
+
+But I can prove that I can separate the first part 
+
+--
+
+from the second part.
+
+---
+
+# Flower tibble
+
+
+
+```{r, include = TRUE, echo = FALSE}
+
+knitr::kable(head(iris), format = 'html') %>%
+   kable_classic(full_width = F) %>%
+   row_spec(2, background = "yellow") %>%
+   row_spec(5, background = "yellow")
+
+```
+
+
 
